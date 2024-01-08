@@ -1,0 +1,23 @@
+{
+  "name": "pika-api",
+  "version": "0.1.0",
+  "description": "Pika API SDK for node.js",
+  "main": "dist/main.js",
+  "types": "dist/@types/main.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishimohan/pika-api-node-sdk.git"
+  },
+  "author": "Rishi Mohan <iamrishi.ms@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishimohan/pika-api-node-sdk/issues"
+  },
+  "homepage": "https://github.com/rishimohan/pika-api-node-sdk#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
