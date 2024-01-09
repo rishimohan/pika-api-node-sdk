@@ -13,7 +13,7 @@ export class PikaApi {
     this.apiKey = apiKey;
   }
 
-  public getEndpoint(templateId: string, version?: string) {
+  public getBaseUrl(version?: string) {
     const baseUrl = "https://api.pika.style";
 
     let apiVersion = "v1";
@@ -22,7 +22,7 @@ export class PikaApi {
       apiVersion = version;
     }
 
-    return `${baseUrl}/${apiVersion}/templates/${templateId}/images`;
+    return `${baseUrl}/${apiVersion}`;
   }
 
   public getHeaders() {
@@ -37,7 +37,7 @@ export class PikaApi {
       responseFormat = "base64";
     }
 
-    let endpoint = this.getEndpoint(templateId);
+    let endpoint = `${this.getBaseUrl()}/templates/${templateId}/images`;
 
     const response = await fetch(endpoint, {
       method: "POST",
