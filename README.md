@@ -54,11 +54,11 @@ const pikaApi = new PikaApi("sk-he2jdus1cbz1dpt4mktgjyvx");
 
 let templateId = "open-graph-image-1";
 let modifications = {
-  title: "API title new",
+  title: "Pika.style",
   textColor: "",
-  description: "API sdk description",
+  description: "Create Visuals and Automate Image Generation",
   backgroundImage: "",
-  backgroundColor: "red",
+  backgroundColor: "",
   width: "",
   height: "",
   aspectRatio: ""
@@ -85,11 +85,11 @@ const pikaApi = new PikaApi("sk-he2jdus1cbz1dpt4mktgjyvx");
 
 let templateId = "open-graph-image-1";
 let modifications = {
-  title: "API title new",
+  title: "Pika.style",
   textColor: "",
-  description: "API sdk description",
+  description: "Create Visuals and Automate Image Generation",
   backgroundImage: "",
-  backgroundColor: "red",
+  backgroundColor: "",
   width: "",
   height: "",
   aspectRatio: ""
@@ -110,7 +110,7 @@ Use this function to generate an image. It takes in 3 arguments
 
 | argument | required | description |
 |----------|----------|-------------|
-|`templateId` | Yes | ID of the template (`open-graph-image-1`, `tweet-image-1`, `beautify-screenshot-1`) |
+|`templateId` | Yes | ID of the template (`open-graph-image-1`, `tweet-image-1`, `beautify-screenshot-1`, ...) |
 |`modifications` | Yes | Modifications for the selected template. |
 |`responseFormat` | No | `base64` or `binary` (Defaults to `base64`). |
 
