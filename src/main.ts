@@ -1,8 +1,3 @@
-interface Headers {
-  "Content-Type": string,
-  "Authorization": string
-}
-
 export class PikaApi {
   private readonly apiKey: string;
   

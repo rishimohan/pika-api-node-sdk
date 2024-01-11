@@ -1,5 +1,5 @@
 {
-  "name": "pika-api",
+  "name": "pika-sdk",
   "version": "0.1.0",
   "description": "Pika API SDK for node.js",
   "main": "dist/main.js",
