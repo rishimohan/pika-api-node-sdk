@@ -4,12 +4,12 @@
 
 Using `npm`
 ```
-npm install --save pika-api
+npm install --save pika-sdk
 ```
 
 Using `yarn`
 ```
-yarn add pika-api
+yarn add pika-sdk
 ```
 
 ## Usage
@@ -17,13 +17,13 @@ yarn add pika-api
 ### Import
 
 ```
-const { PikaApi } = require('pika-api');
+const { PikaApi } = require('pika-sdk');
 ```
 
 With `ES6`
 
 ```
-import { PikaApi } from "pika-api";
+import { PikaApi } from "pika-sdk";
 ```
 
 ### Generate image
@@ -48,7 +48,7 @@ console.log(response);
 `Base64` response format.
 
 ```js
-import { PikaApi } from "pika-api";
+import { PikaApi } from "pika-sdk";
 
 const pikaApi = new PikaApi("sk-he2jdus1cbz1dpt4mktgjyvx");
 
@@ -78,7 +78,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAJ2CAYAAABPQHtcAAAAAXNSR0IArs
 `Binary` response format.
 
 ```js
-import { PikaApi } from "pika-api";
+import { PikaApi } from "pika-sdk";
 import { createWriteStream } from 'fs';
 
 const pikaApi = new PikaApi("sk-he2jdus1cbz1dpt4mktgjyvx");
