@@ -1,6 +1,6 @@
 {
   "name": "pika-sdk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Pika API SDK for node.js",
   "main": "dist/main.js",
   "types": "dist/@types/main.d.ts",
