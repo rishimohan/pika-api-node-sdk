@@ -1,4 +1,6 @@
-# Pika API Node.js SDK
+# Pika API Node SDK
+
+View on npmjs: https://www.npmjs.com/package/pika-sdk
 
 ## Installation
 
@@ -14,6 +16,8 @@ yarn add pika-sdk
 
 ## Usage
 
+If you don't have your API key, get one from [pika.style](https://pika.style/pricing). Check the documentation on [how to get your API key](https://docs.pika.style/docs/basics/getting-api-key)
+
 ### Import
 
 ```
@@ -26,26 +30,22 @@ With `ES6`
 import { PikaSdk } from "pika-sdk";
 ```
 
-### Generate image
-
-Initialise `PikaSdk`.
+### Initialise
 
 ```js
 const pikaSdk = new PikaSdk("Your API key");
 ```
 
-If you don't have your API key, get one from [Pika.style](https://pika.style).
-
-Check the documentation on [How to get your API key](https://docs.pika.style/docs/basics/getting-api-key).
+### Generate image
 
 ```js
 const response = await PikaSdk.generateImageFromTemplate(templateId, modifications, "base64");
 console.log(response);
 ```
 
-**Example:**
+## Example
 
-`Base64` response format.
+### `Base64` response format
 
 ```js
 import { PikaSdk } from "pika-sdk";
@@ -75,7 +75,7 @@ Base64 output
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAJ2CAYAAABPQHtcAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XmYJXdZL/Bvna37dM90FghLCBAQkC1BCBAMShLFBJAgKnofroBeFUUF5LrhiihXcV8BQRYVUUAlIewIGPbFmLCFLWwCYZEtzPR+trp/TM/......
 ```
 
-`Binary` response format.
+### `Binary` response format
 
 ```js
 import { PikaSdk } from "pika-sdk";
@@ -102,9 +102,9 @@ const buffer = Buffer.from(arrayBuffer);
 createWriteStream("og.png").write(buffer);
 ```
 
-This example writes the binary image to the file `og.png`.
+This example writes the binary image to the file `og.png`
 
-#### generateImageFromTemplate
+## generateImageFromTemplate
 
 Use this function to generate an image. It takes in 3 arguments
 
@@ -114,4 +114,4 @@ Use this function to generate an image. It takes in 3 arguments
 |`modifications` | Yes | Modifications for the selected template. |
 |`responseFormat` | No | `base64` or `binary` (Defaults to `base64`). |
 
-For available templates and it's modifications refer [image generation api templates](https://pika.style/image-generation-api/templates).
+For available templates and their modifications refer [image generation api templates](https://pika.style/image-generation-api/templates)
