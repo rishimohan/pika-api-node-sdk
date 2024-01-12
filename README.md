@@ -31,7 +31,7 @@ import { PikaSdk } from "pika-sdk";
 Initialise `PikaSdk`.
 
 ```js
-const PikaSdk = new PikaSdk("Your API key");
+const pikaSdk = new PikaSdk("Your API key");
 ```
 
 If you don't have your API key, get one from [Pika.style](https://pika.style).
