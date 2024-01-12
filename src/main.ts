@@ -1,4 +1,4 @@
-export class PikaApi {
+export class PikaSdk {
   private readonly apiKey: string;
   
   constructor(apiKey: string) {
@@ -56,4 +56,4 @@ export class PikaApi {
   }
 }
 
-export default PikaApi;
+export default PikaSdk;

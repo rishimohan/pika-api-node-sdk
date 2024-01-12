@@ -17,21 +17,21 @@ yarn add pika-sdk
 ### Import
 
 ```
-const { PikaApi } = require('pika-sdk');
+const { PikaSdk } = require('pika-sdk');
 ```
 
 With `ES6`
 
 ```
-import { PikaApi } from "pika-sdk";
+import { PikaSdk } from "pika-sdk";
 ```
 
 ### Generate image
 
-Initialise `PikaApi`.
+Initialise `PikaSdk`.
 
 ```js
-const pikaApi = new PikaApi("Your API key");
+const PikaSdk = new PikaSdk("Your API key");
 ```
 
 If you don't have your API key, get one from [Pika.style](https://pika.style).
@@ -39,7 +39,7 @@ If you don't have your API key, get one from [Pika.style](https://pika.style).
 Check the documentation on [How to get your API key](https://docs.pika.style/docs/basics/getting-api-key).
 
 ```js
-const response = await pikaApi.generateImageFromTemplate(templateId, modifications, "base64");
+const response = await PikaSdk.generateImageFromTemplate(templateId, modifications, "base64");
 console.log(response);
 ```
 
@@ -48,9 +48,9 @@ console.log(response);
 `Base64` response format.
 
 ```js
-import { PikaApi } from "pika-sdk";
+import { PikaSdk } from "pika-sdk";
 
-const pikaApi = new PikaApi("sk-he2jdus1cbz1dpt4mktgjyvx");
+const pikaSdk = new PikaSdk("sk-he2jdus1cbz1dpt4mktgjyvx");
 
 let templateId = "open-graph-image-1";
 let modifications = {
@@ -64,7 +64,7 @@ let modifications = {
   aspectRatio: ""
 }
 
-const response = await pikaApi.generateImageFromTemplate(templateId, modifications, "base64");
+const response = await pikaSdk.generateImageFromTemplate(templateId, modifications, "base64");
 console.log(response);
 
 console.log("Image base64:", response.data.base64);
@@ -78,10 +78,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAJ2CAYAAABPQHtcAAAAAXNSR0IArs
 `Binary` response format.
 
 ```js
-import { PikaApi } from "pika-sdk";
+import { PikaSdk } from "pika-sdk";
 import { createWriteStream } from 'fs';
 
-const pikaApi = new PikaApi("sk-he2jdus1cbz1dpt4mktgjyvx");
+const pikaSdk = new PikaSdk("sk-he2jdus1cbz1dpt4mktgjyvx");
 
 let templateId = "open-graph-image-1";
 let modifications = {
@@ -95,7 +95,7 @@ let modifications = {
   aspectRatio: ""
 }
 
-const response = await pikaApi.generateImageFromTemplate(templateId, modifications, "binary");
+const response = await pikaSdk.generateImageFromTemplate(templateId, modifications, "binary");
 const arrayBuffer = await response.arrayBuffer();
 const buffer = Buffer.from(arrayBuffer);
 
