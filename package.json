@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/rishimohan/pika-api-node-sdk/issues"
   },
-  "homepage": "https://github.com/rishimohan/pika-api-node-sdk#readme",
+  "homepage": "https://pika.style/image-generation-api",
   "devDependencies": {
     "typescript": "^5.3.3"
   }
